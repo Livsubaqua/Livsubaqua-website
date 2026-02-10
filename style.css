@@ -1,0 +1,101 @@
+/* Core Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #121A38;
+    background-color: white;
+}
+
+header {
+    background-color: #121A38;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.port-nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+.starboard-nav {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.starboard-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(18, 26, 56, 0.7), rgba(18, 26, 56, 0.7)), 
+                url('imagehero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 150px 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: white;
+    color: #121A38;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Content Area */
+.content {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    line-height: 1.6;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.8rem;
+    border-top: 1px solid #121A38;
+}
+
+/* Committee Grid Styling */
+.committee-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.member-card {
+    border: 1px solid #121A38;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+}
+
+.member-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Makes the photo circular */
+    object-fit: cover;
+}
