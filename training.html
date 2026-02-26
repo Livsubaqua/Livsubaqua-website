@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train With Us | LUSAC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="port-nav">
+                <img src="images/logo.png" alt="LUSAC Logo" class="logo">
+                <span class="club-name">LUSAC</span>
+            </div>
+            <ul class="starboard-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="training.html">Training</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="band white-band">
+            <div class="container split">
+                <div class="text-content">
+                    <h1>Learn to Dive</h1>
+                    <p>LUSAC is a BSAC-affiliated club. We offer nationally recognised training from Ocean Diver through to Sports Diver and beyond.</p>
+                    <p>Our instructors are club volunteers who are passionate about sharing the sport. Training takes place at our local pool sessions and on organised club trips.</p>
+                </div>
+                <div class="image-content">
+                    <img src="images/training-sq.jpg" alt="Pool Training" class="square-img">
+                </div>
+            </div>
+        </section>
+
+        <section class="band blue-band">
+            <div class="container" style="text-align: center;">
+                <h2>Members Portal</h2>
+                <p>Already a member? Enter your access code to view training manuals, kit logs, and internal resources.</p>
+                
+                <div style="margin-top: 20px;">
+                    <input type="password" id="clubCode" placeholder="Enter Access Code" 
+                           style="padding: 12px; border-radius: 4px; border: none; width: 200px;">
+                    <button onclick="checkCode()" class="cta-button" style="cursor: pointer; border: none;">Enter</button>
+                    <p id="errorMsg" style="color: #ff4d4d; display: none; margin-top: 10px;">Invalid code. Try again.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Liverpool Sub-Aqua Club. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function checkCode() {
+            const code = document.getElementById('clubCode').value;
+            if (code) {
+                // This tries to send the user to [code].html
+                // Example: if the code is 'Bubbles26', they go to 'Bubbles26.html'
+                window.location.href = code + ".html";
+            }
+        }
+    </script>
+</body>
+</html>
