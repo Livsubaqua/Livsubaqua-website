@@ -14,5 +14,5 @@ Foornada horay u kululee ilaa 160. Muuska shiil, subagga dareeraha ah. Isku qas 
 End note.
 I feel as though our time together is coming to a close. Alas i have runneth out of things to say and I think I have rambled enough.My Final words to my successors: this responsibility is  your's to bear, and it's a great one. YOU and you alone have final say about what apears on the 'University of Liverpool Sub-Aqua Club' website. Use it wisely. 
 
-Please sign your name and shoe size as your legacy:
-Will 8.5
+Please sign your name as your legacy:
+Will
