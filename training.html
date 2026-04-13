@@ -10,61 +10,585 @@
     <header>
         <nav>
             <div class="port-nav">
-                <img src="images/logo.png" alt="LUSAC Logo" class="logo">
+                <img src="images/logo.png" alt="LUSAC Seal Logo" class="logo">
                 <span class="club-name">LUSAC</span>
             </div>
             <ul class="starboard-nav">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
+			<li class="dropdown">
+     			<a href="about.html" class="dropbtn">About Us</a>
+        		<div class="dropdown-content">
+           		<a href="committee.html">Committee</a>
+       		   </div>
+   		 </li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="training.html">Training</a></li>
+                <li><a href="memb-port.html">Members Portal</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section class="band white-band">
-            <div class="container split">
-                <div class="text-content">
-                    <h1>Learn to Dive</h1>
-                    <p>LUSAC is a BSAC-affiliated club. We offer nationally recognised training from Ocean Diver through to Sports Diver and beyond.</p>
-                    <p>Our instructors are club volunteers who are passionate about sharing the sport. Training takes place at our local pool sessions and on organised club trips.</p>
-                </div>
-                <div class="image-content">
-                    <img src="images/training-sq.jpg" alt="Pool Training" class="square-img">
-                </div>
+<main>
+    <section class="band white-band">
+        <div class="container split">
+            <div class="text-content">
+                <h1>Learn to Dive</h1>
+                <p>LUSAC is a BSAC-affiliated club. We offer nationally recognised training from Ocean Diver through to Sports Diver and beyond.</p>
+                <p>Our instructors are club volunteers who are passionate about sharing the sport. Training takes place at our local pool sessions and on organised club trips.</p>
             </div>
-        </section>
+            <div class="image-content">
+                <img src="images/pool-training1.JPG" alt="Pool Training" class="about_us-band-img">
+            </div>
+        </div>
+    </section>
 
-        <section class="band blue-band">
-            <div class="container" style="text-align: center;">
-                <h2>Members Portal</h2>
-                <p>Already a member? Enter your access code to view training manuals, kit logs, and internal resources.</p>
-                
-                <div style="margin-top: 20px;">
-                    <input type="password" id="clubCode" placeholder="Enter Access Code" 
-                           style="padding: 12px; border-radius: 4px; border: none; width: 200px;">
-                    <button onclick="checkCode()" class="cta-button" style="cursor: pointer; border: none;">Enter</button>
-                    <p id="errorMsg" style="color: #ff4d4d; display: none; margin-top: 10px;">Invalid code. Try again.</p>
+    <section class="container" style="padding: 40px 20px;">
+        <h2>Joining</h2>
+        <h3>What new members can expect when joining the club</h3>
+
+        <div class="accordion">
+            <details style="margin-bottom: 10px; border: 1px solid #121A38; border-radius: 4px;">
+                <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #ededed;">
+                    How to Join
+                </summary>
+                <div style="padding: 15px; border-top: 1px solid #121A38;">
+                    <p>LUSAC membership is open to:</p>
+                    <ul>
+                        <li>Current University of Liverpool students (under- and postgraduate)</li>
+                        <li>University staff</li>
+                        <li>Alumni</li>
+                    </ul>
+                    <p>You must register through the Athletic Union to be insured to train and attend trips. We welcome members aged 18+, from complete beginners to experienced divers.</p>
+
+
+                    <p>We open applications to new trainees every September, with training beginning in mid-October. You can sign up via:</p>
+                    <ul>
+                        <li>Links on our Instagram</li>
+                        <li>The sign-up form on our website</li>
+                        <li>Visiting us at the University Sports Freshers’ Fair</li>
+                    </ul>
+                    <p>Spaces fill quickly — early sign-up is strongly recommended.</p>
+
+                    <h3 style="margin-top: 20px;">Spaces Available</h3>
+                    <p>To ensure high-quality, safe training, we limit numbers based on instructor availability.</p>
+                    
+                    <h4>Semester 1</h4>
+                    <ul>
+                        <li>32 brand new divers (Ocean Diver trainees)</li>
+                        <li>24 crossover divers (already qualified under another agency)</li>
+                    </ul>
+
+                    <h4>Semester 2</h4>
+                    <ul>
+                        <li>16 brand new divers</li>
+                        <li>16 crossover divers</li>
+                    </ul>
+
+                    <h4>We also train:</h4>
+                    <ul>
+                        <li>Sports Divers</li>
+                        <li>Dive Leaders</li>
+                        <li>Advanced Divers (for existing members and inducted crossover divers)</li>
+                    </ul>
+
+                    <h3 style="margin-top: 20px;">After you sign up</h3>
+                    <p>Once you complete the sign-up form, our President or Training Officer will contact you to organise your sessions.</p>
                 </div>
+            </details>
+
+            <details style="margin-bottom: 10px; border: 1px solid #121A38; border-radius: 4px;">
+                <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #ededed;">
+                    Try Dives
+                </summary>
+                <div style="padding: 15px; border-top: 1px solid #121A38;">
+                    <p>Not sure yet? We offer free try dives in early October, supervised by one of our qualified instructors. This is a great opportunity to experience scuba diving before committing.</p>
+                </div>
+            </details>
+
+            <details style="margin-bottom: 10px; border: 1px solid #121A38; border-radius: 4px;">
+                <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #ededed;">
+                    Ocean Diver Trainees (New Divers)
+                </summary>
+                <div style="padding: 15px; border-top: 1px solid #121A38;">
+                    <h4>Minimum pool training includes:</h4>
+                    <ul>
+                        <li>5 pool lessons</li>
+                        <li>1 pool assessment</li>
+                        <li>1 drysuit orientation</li>
+                    </ul>
+
+                    <h4>You will also complete:</h4>
+                    <ul>
+                        <li>In-person theory lectures</li>
+                        <li>A revision session</li>
+                        <li>A theory exam</li>
+                        <li>Minimum 2 days of open water training (usually at a quarry in the Lake District)</li>
+                        <li>At least one sea dive on a scheduled club trip</li>
+                    </ul>
+                    <p>All exact dates are communicated after sign-up. This leads to your BSAC Ocean Diver qualification, with opportunities to progress to Sports Diver and beyond.</p>
+                </div>
+            </details>
+
+            <details style="margin-bottom: 10px; border: 1px solid #121A38; border-radius: 4px;">
+                <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #ededed;">
+                    Crossover Divers (Qualified with a different organisation)
+                </summary>
+                <div style="padding: 15px; border-top: 1px solid #121A38;">
+                    <p>If you are qualified under another agency, you will complete a minimum of 2 pool sessions:</p>
+                    <ul>
+                        <li>1 rescue skills pool session</li>
+                        <li>1 drysuit orientation</li>
+                    </ul>
+                    <p>After induction into the club, you can continue progressing through BSAC grades.</p>
+                </div>
+            </details>
+
+            <details style="margin-bottom: 10px; border: 1px solid #121A38; border-radius: 4px;">
+                <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #ededed;">
+                    Medical & Safety Requirements
+                </summary>
+                <div style="padding: 15px; border-top: 1px solid #121A38;">
+                    <p>Before beginning training, all members must complete the BSAC self-declaration medical form. If you answer “yes” to any medical questions, you may need clearance from a medical referee before diving.
+<li>The decleration can be found on the UKDMC website, under Downloads, Recreational Diver Medical Decleration Form</p>
+
+                </div>
+            </details>
+
+            <details style="margin-bottom: 10px; border: 1px solid #121A38; border-radius: 4px;">
+                <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #ededed;">
+                    Costs
+                </summary>
+                <div style="padding: 15px; border-top: 1px solid #121A38;">
+                    <p>We work hard to keep diving as affordable as possible for students.</p>
+                    <ul>
+                        <li><strong>AU Membership – £72:</strong> Registers you with the club and covers insurance for trips.</li>
+                        <li><strong>Kit Levy – £50:</strong> Covers equipment servicing and gives you access to all club kit.</li>
+                        <li><strong>BSAC Membership & Training Pack – £72.75:</strong> Provides personal insurance, registration and certification.</li>
+                        <li><strong>Instructor Fees – £30:</strong> Covers instructor training trip entry fees.</li>
+                        <li><strong>Quarry Entrance Fees – £46:</strong> For open water training weekends.</li>
+                        <li><strong>Personal Kit – £50–£100:</strong> Mask, fins, snorkel, hood, gloves, and boots.</li>
+                    </ul>
+
+                    <h3 style="color: #121A38; margin-top: 25px;">Total Cost to Learn to Dive: £320–£370</h3>
+                    <p>For comparison, the equivalent PADI Open Water qualification costs approximately £711 at a local quarry training site, and does not include long-term access to club equipment, ongoing training, or a lifelong dive community.</p>
+                    
+                    <h3>With LUSAC, you gain:</h3>
+                    <ul>
+                        <li>A recognised qualification</li>
+                        <li>Access to club boats and equipment</li>
+                        <li>A structured training pathway</li>
+                        <li>A dive community for life</li>
+                    </ul>
+                </div>
+            </details>
+        </div>
+    </section>
+</main>
+        </details>
+
+   </div>
+      </section>
+
+
+
+
+
+    <div class="container">
+        <div class="accordion">
+<section class="container" style="padding: 40px 20px;">
+    <h2>Qualifications</h2>
+    <p>Take a DEEP DIVE ;) into the training and outcomes of each qualification level</p>
+
+            <details style="margin-bottom: 10px; border: 1px solid #121A38; border-radius: 4px;">
+                <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #ededed;">
+                    Ocean Diver 
+                </summary>
+                <div style="padding: 15px; border-top: 1px solid #121A38;">
+                    <p>The Ocean Diver qualification is the first grade in the BSAC training pathway.</p>
+                    <p>It is equivalent to PADI and SSI Open Water Diver. However, our course includes:</p>
+                    <ul>
+                        <li>Rescue skills</li>
+                        <li>Drysuit training</li>
+                        <li>Nitrox certification (up to 36%)</li>
+                    </ul>
+                    <p>These are included as standard — not optional extras.</p>
+
+                    <h3 style="color: #121A38; margin-top: 20px;">What Is an Ocean Diver?</h3>
+                    <p>An Ocean Diver is qualified to:</p>
+                    <ul>
+                        <li>Dive to a maximum depth of 20 metres</li>
+                        <li>Dive in conditions they have previously experienced with another Ocean Diver or Sports Diver</li>
+                        <li>Dive in new conditions when accompanied by a Dive Leader or above</li>
+                        <li>Dive under the supervision of a Dive Manager</li>
+                    </ul>
+                    <p>The qualification prepares you to dive safely within a structured club environment and provides a strong foundation for progression to Sports Diver and beyond.</p>
+
+                    <h3 style="color: #121A38; margin-top: 20px;">Training Structure</h3>
+                    <p>There are 3 aspects to your training, theory, pool and open water lessons.</p>
+                    <p>Once you’ve joined the club, you’ll be allocated a pool cohort on either Tuesday or Friday evenings, with whom you’ll complete a minimum of 7 pool sessions:</p>
+                    <ul>
+                        <li>5 lessons</li>
+                        <li>1 pool assessment</li>
+                        <li>1 drysuit orientation</li>
+                    </ul>
+                    <p>You will also complete 8 theory sessions, which run every Tuesday evening during semester 1, comprising:</p>
+                    <ul>
+                        <li>6 lectures</li>
+                        <li>1 revision session</li>
+                        <li>1 theory exam</li>
+                    </ul>
+                    <p>Finally, before qualification, you must complete:</p>
+                    <ul>
+                        <li>4 open water training dives (2 dives per day over 2 days)</li>
+                        <li>1 sea dive on a scheduled club trip</li>
+                    </ul>
+                    <p>Your open water training dates will be arranged based on your availability and that of a suitably qualified instructor.</p>
+                    
+                    <p>To qualify as an Ocean Diver, you must:</p>
+                    <ul>
+                        <li>Complete at least 4 open-water dives</li>
+                        <li>Accumulate at least 120 minutes underwater</li>
+                        <li>Dive in at least 4 different conditions from the following:</li>
+                    </ul>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 5px;">
+                        <ul>
+                            <li>Sea dive</li>
+                            <li>Shore dive</li>
+                            <li>Nitrox dive (up to 36%)</li>
+                            <li>Low visibility dive (2–4m)</li>
+                            <li>Drift dive (0.5–1 knot)</li>
+                        </ul>
+                        <ul>
+                            <li>Small boat dive</li>
+                            <li>Large boat dive</li>
+                            <li>Wall dive</li>
+                            <li>Dive in protective clothing (wetsuit or drysuit)</li>
+                        </ul>
+                    </div>
+                    <p>Some trainees may require additional pool, theory or open water sessions before qualification.</p>
+                    <p>We are committed to ensuring every diver reaches qualification safely and confidently, and we do our best to provide additional training where needed.</p>
+
+                    <h3 style="color: #121A38; margin-top: 20px;">What’s Next?</h3>
+                    <p>Once you’ve completed your Ocean Diver, you can progress onto doing your Sports Diver qualification with us. In addition, you can unlock a variety of Skill Development Courses to get involved in, including:</p>
+                    <ul>
+                        <li>Buoyancy and Trim Workshop</li>
+                        <li>Boat handling</li>
+                        <li>O2 administration</li>
+                    </ul>
+                </div>
+            </details>
+
+
+        <div class="accordion">
+            <details style="margin-bottom: 10px; border: 1px solid #121A38; border-radius: 4px;">
+                <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #ededed;">
+                    Sports Diver
+                </summary>
+                <div style="padding: 15px; border-top: 1px solid #121A38;">
+                    <p>The Sports Diver qualification is the next grade in the BSAC training pathway that we offer. It is equivalent to PADI rescue diver, and is a mandatory requirement to certain Special Development Courses (SDCs), alongside a prerequisite to doing your Instructor Foundation Course (IFC), the first stage on the BSAC instructor training pathway.</p>
+
+                    <h3 style="color: #121A38; margin-top: 20px;">What is a Sports Diver?</h3>
+                    <p>A Sports Diver is qualified to:</p>
+                    <ul>
+                        <li>Dive to a maximum depth of 40 metres</li>
+                        <li>Dive in conditions they have previously experienced with another Ocean Diver or Sports Diver</li>
+                        <li>Dive in new conditions when accompanied by a Dive Leader or above</li>
+                        <li>Complete dives requiring mandatory decompression stops.</li>
+                    </ul>
+                    <p>The qualification provides the foundation for many SDCs, alongside allowing you to take greater responsibility within the club, either as an assistant dive manager, or assistant instructor (or both!)</p>
+
+                    <h3 style="color: #121A38; margin-top: 20px;">Training Structure</h3>
+                    <p>There are 4 aspects to your training: theory, surface practical, pool and open water lessons.</p>
+                    <p>We do not currently offer Sports Diver theory training in person, but this is something we are hoping to implement from the 2026-27 academic year onwards. Instead, BSAC offer an e-learning version, where you can go through the 6 lectures in your own time.</p>
+                    <p>The rest of the training is as follows:</p>
+                    <ul>
+                        <li>2 surface practicals:</li>
+                        <ul style="list-style-type: circle; margin-left: 20px;">
+                            <li>Basic first aid - completed on an evening during term time</li>
+                            <li>Assistant dive managing - completed on a club trip</li>
+                        </ul>
+                        <li>1 pool lesson</li>
+                        <li>5 open water lessons (completed over 2 or 3 days)</li>
+                    </ul>
+
+                    <p style="margin-top: 20px;">To qualify as a Sports Diver, you must:</p>
+                    <ul>
+                        <li>Complete at least 5 open-water dives since you achieved your Ocean Diver</li>
+                        <li>Accumulate at least 150 minutes underwater since you achieved your Ocean Diver</li>
+                        <li>Dive in at least 5 different conditions from the following since you achieved your Ocean Diver:</li>
+                    </ul>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 5px;">
+                        <ul>
+                            <li>Sea dive</li>
+                            <li>Small boat dive</li>
+                            <li>Large boat dive</li>
+                            <li>Boat dive with mechanical lift</li>
+                            <li>Nitrox dive (up to 36%)</li>
+                            <li>Diving using a shotline</li>
+                        </ul>
+                        <ul>
+                            <li>Wall dive</li>
+                            <li>Dive in protective clothing (wetsuit or drysuit)</li>
+                            <li>Low visibility dive (2-4m)</li>
+                            <li>Drift dive (0.5-1 knot)</li>
+                            <li>Night dive</li>
+                            <li>Cold water dive (&lt;10°C)</li>
+                        </ul>
+                    </div>
+
+                    <h3 style="color: #121A38; margin-top: 20px;">What’s Next?</h3>
+                    <p>Once you’ve completed your Sports Diver, you can progress onto doing your Dive Leader qualification with us. In addition, you can get involved in various SDCs, and start your instructor and technical diving journey. Courses unlocked by doing your Sports Diver include:</p>
+                    <ul>
+                        <li>Instructor Foundation Course</li>
+                        <li>Twinset Diver</li>
+                        <li>Advanced Decompression Procedures</li>
+                        <li>Underwater photography</li>
+                    </ul>
+                </div>
+            </details>
+        </div>
+
+
+
+        <div class="accordion">
+            <details style="margin-bottom: 10px; border: 1px solid #121A38; border-radius: 4px;">
+                <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #ededed;">
+                    Dive Leader
+                </summary>
+                <div style="padding: 15px; border-top: 1px solid #121A38;">
+                    <p>The Dive Leader qualification is the grade in the BSAC pathway above sports diver. It is a mandatory prerequisite to becoming a nationally certified open-water instructor.</p>
+
+                    <h3 style="color: #121A38; margin-top: 20px;">What is a Dive Leader?</h3>
+                    <p>An Dive Leader is qualified to:</p>
+                    <ul>
+                        <li>Dive to a maximum depth of 40 metres</li>
+                        <li>Dive with unqualified divers and Ocean or Sports divers to expand their range of experience</li>
+                        <li>Act as a Dive Manager for dive trips</li>
+                    </ul>
+                    <p>Once a dive leader has completed their required instructor training, they are also allowed to instruct unqualified divers without supervision in open-water.</p>
+
+                    <h3 style="color: #121A38; margin-top: 20px;">Training Structure</h3>
+                    <p>There are 4 aspects to your training: theory, surface practical and open water lessons.</p>
+                    <p>We do not currently offer Dive Leader theory training in person, but this is something we are hoping to implement from the 2026-27 academic year onwards. Instead, BSAC offer an e-learning version, where you can go through the 6 lectures in your own time.</p>
+                    
+                    <p>The rest of the training is as follows:</p>
+                    <ul>
+                        <li>3 surface practicals:</li>
+                        <ul style="list-style-type: circle; margin-left: 20px;">
+                            <li>1 on rescue management</li>
+                            <li>2 on dive management</li>
+                        </ul>
+                        <li>5 open water lessons (completed over 2 or 3 days)</li>
+                    </ul>
+
+                    <p style="margin-top: 20px;">To qualify as a Dive Leader you must:</p>
+                    <ul>
+                        <li>Complete at least 60 open water dives</li>
+                        <li>Complete at least 40 open water dives since achieving your Ocean Diver</li>
+                        <li>Complete at least 20 dives since achieving your Sports Diver</li>
+                        <li>Accumulate at least 600 minutes underwater since you achieved your Sports Diver</li>
+                        <li>Complete 10 dives to a depth &lt;20m since achieving your Sports Diver</li>
+                        <li>Competently lead 8 dives under the supervision of an open water instructor since achieving your Sports Diver qualification.</li>
+                        <li>Complete 10 experience dives from the following criteria (each criteria can be used a maximum of 3 times):</li>
+                    </ul>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 5px;">
+                        <ul>
+                            <li>Planned decompression</li>
+                            <li>Navigation</li>
+                            <li>Underwater visibility &lt;3m</li>
+                            <li>Night dive</li>
+                            <li>Wreck dive</li>
+                            <li>Drift dive with current &gt;0.5kts</li>
+                            <li>Search dive</li>
+                        </ul>
+                        <ul>
+                            <li>Project dive</li>
+                            <li>Wall dive</li>
+                            <li>Cold water dive (&lt;10°C)</li>
+                            <li>CCR dive</li>
+                            <li>Mixed gas</li>
+                            <li>Twinset</li>
+                        </ul>
+                    </div>
+
+                    <h3 style="color: #121A38; margin-top: 20px;">What’s Next?</h3>
+                    <p>Once you’ve completed your Dive Leader, the next dive qualification is Advanced Diver. In addition, you can continue your instructor journey by doing your Open Water Instructor Course, and your instructor exams to become a nationally recognised instructor.</p>
+                </div>
+            </details>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+<section class="container" style="padding: 40px 20px;">
+    <h2>Skill Development Courses (SDCs)</h2>
+    <p>Enhance your diving with specialist training.</p>
+
+    <div class="accordion">
+        <details style="margin-bottom: 10px; border: 1px solid #121A38; border-radius: 4px;">
+            <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #ededed;">
+                O2 Administration
+            </summary>
+            <div style="padding: 15px; border-top: 1px solid #121A38;">
+                <p>All open water instructors are also certified to teach the Oxygen Administration course. The course itself is a mandatory prerequisite to achieving your dive leader qualification, and it goes through the various ways of administering oxygen, and what to do in a variety of first aid scenarios.
+
+<p>The course is taught over a day, with a mixture of theory content and practicals using first aid equipment. We aim to run the course once or twice a year, depending on demand.
+</p>
             </div>
-        </section>
+        </details>
+
+        <details style="margin-bottom: 10px; border: 1px solid #121A38; border-radius: 4px;">
+            <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #ededed;">
+                Buoyancy & Trim Workshop
+            </summary>
+            <div style="padding: 15px; border-top: 1px solid #121A38;">
+                <p>All open water instructors are also certified to teach the Buoyancy and Trim workshop, but we like our instructors to be supervised by an experienced instructor for the course for the first time they teach it. The workshop is a competency test, with a result of gold being a prerequisite for all technical diving SDCs. 
+
+<p>The course is taught over a day, with two dives. On the first dive, your buoyancy and trim will be tested as you are taskloaded (e.g. mask clearing, deploying a DSMB). Feedback will be given from your instructor over the surface interval, and you’ll have a second opportunity to practice again on the second dive. After the second dive, your grade will be awarded depending on how much your buoyancy changed during the task loading, according to the following metrics:
+		<ul>
+                        <li>Bronze - +/- 2m
+                        <li>Silver - +/- 1m
+                        <li>Gold - +/- 0.5m
+                        <li>Black - +/- 0.3m
+
+We aim to run the course once or twice a year, depending on demand.
+</p>
+            </div>
+        </details>
+
+        <details style="margin-bottom: 10px; border: 1px solid #121A38; border-radius: 4px;">
+            <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #ededed;">
+                Advanced Decompression Procedures
+            </summary>
+            <div style="padding: 15px; border-top: 1px solid #121A38;">
+                <p>We have one instructor who is qualified to teach the ADP course within the club. The course allows participants to use oxygen rich gas mixes for accelerated decompression. Sports Divers and above can enrol on the course, and they have to have depth experience to 35m, alongside a Buoyancy and Trim level of gold. 
+
+The course is taught over two days, with two dives. On the first day, you practice using decompression mixes without requiring them, alongside other skills such as gas switching, turning cylinders off and DSMB deployment. On the second day, you’ll practice the skills and using the mixes having entered mandatory decompression time.
+
+We aim to run the course once a year.
+</p>
+            </div>
+        </details>
+
+        <details style="margin-bottom: 10px; border: 1px solid #121A38; border-radius: 4px;">
+            <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #ededed;">
+                Snorkelling
+            </summary>
+            <div style="padding: 15px; border-top: 1px solid #121A38;">
+                <p>We have one instructor qualified to teach the BSAC snorkel diver course. This course introduces you to the basics of snorkelling, including correct use of equipment, buddy checks, techniques for duck diving and finning, rescue techniques and how to plan snorkel dives safely. 
+
+<p>The course is taught over a couple of evenings, through a combination of theory lectures and in pool lessons. We aim to run the course once a year, depending on demand.
+
+</p>
+            </div>
+        </details>
+
+
+
+
+<section class="container" style="padding: 40px 20px;">
+        <h2>What Else Do We Do?</h2>
+
+        <div class="accordion">
+            <details style="margin-bottom: 10px; border: 1px solid #121A38; border-radius: 4px;">
+                <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #ededed;">
+Instructor Training Pathway
+                </summary>
+                <div style="padding: 15px; border-top: 1px solid #121A38;">
+                    
+                    <h3 style="color: #121A38;">Instructor Foundation Course (IFC)</h3>
+                    <p>This is the first course required to start your instructor journey. It runs over 1 day in a regional location, where BSAC members from across the country will attend.</p>
+                    <p>There is some prelearning and reading to do about the basic of instructing, and on the day you’ll receive some lectures, alongside lots of small group work. You must be a Sports Diver or above to do the course.</p>
+                    <p>The IFC prepares you to teach both theory and practical lessons, so in small groups you get the opportunity to do both.</p>
+                    <p>You’ll have to prepare a short theory lecture on a randomly selected topic, alongside being given a demonstration of a pool lesson, and then providing a lesson on a pool skill.</p>
+                    
+                    <p>Once you’ve completed your IFC, you are allowed to teach in the following scenarios:</p>
+                    <ul>
+                        <li>Theory lectures under onsite supervision from an open water instructor (they do not have to be in the room)</li>
+                        <li>Sheltered water (pool) lessons under onsite supervision from an open water instructor (they do not have to be in the room)</li>
+                        <li>Open water lessons under direct supervision from an open water instructor (they must be in the water with you observing)</li>
+                    </ul>
+
+                    <p>If you are a dive leader or above and complete your IFC, you are allowed to teach Ocean Diver and Sports Diver open water modules with onsite supervision with the permission of the DO.</p>
+                    <p>Once you’ve done the course, you are defined as an assistant diving instructor.</p>
+                    <p>Within the club, we allow you to teach in the pool on a weekly basis, alongside delivering theory lectures and open water lessons under supervision.</p>
+                    <p>You’ll spend a couple of weeks observing and shadowing one of our experienced instructors in the pool for one cycle of training, before taking on a cohort of trainees of your own with support from our instructors.</p>
+                    <p>In addition, if you are committed to developing on the instructor journey for at least a year, the club will offer you half the IFC course fee.</p>
+
+                    <h3 style="color: #121A38; margin-top: 30px;">Open Water Instructor Course (OWIC)</h3>
+                    <p>This is the second course on the instructor pathway, and is for Dive Leaders and above. It runs over 1 day in a regional location, where BSAC members from across the country will attend.</p>
+                    <p>There is some prelearning and reading to do about the basic of instructing, and on the day you’ll receive some lectures, alongside lots of small group work.</p>
+                    <p>The OWIC prepares you to teach in open water under onsite supervision by giving you opportunities to observe and prepare your own open water lessons in small groups.</p>
+                    <p>Once you have completed it, you can instruct in open water under on-site supervision, and you are defined as an assistant open-water instructor.</p>
+                    <p>Similar to with the IFC, if you are committed to instructing on a regular basis for us, we will contribute half of the course fee.</p>
+
+                    <h3 style="color: #121A38; margin-top: 30px;">Practical and Theory Exams</h3>
+                    <p>The final state of your journey to becoming an open water instructor is to do your theory and practical exams. This is for Dive Leaders and above who have completed the OWIC.</p>
+                    
+                    <p><strong>Practical Instructor Exam (PIE)</strong></p>
+                    <p>The PIE is a half day practical exam, where you will be given a skill to demonstrate a lesson on the day, and you’ll have to prepare and deliver it in 45 minutes in the water.</p>
+                    <p>In addition, you’ll be assessed on your skills by demonstrating a rescue skill, also decided on the day.</p>
+                    <p>Once you have passed it, you’ll be designated a practical instructor, and can teach in sheltered and open water without supervision.</p>
+
+                    <p><strong>Theory Instructor Exam (TIE)</strong></p>
+                    <p>The TIE is a half day theory exam, consisting of a combination of a multiple choice exam on all diving theory up to Dive Leader (including related to instructing), and a short oral presentation, lasting 10 minutes on a topic given to you.</p>
+                    <p>Once you’ve passed it, you’ll be designated a theory instructor, and can teach theory lectures and dry practical sessions without supervision.</p>
+
+                    <p>Once you’ve passed both the PIE and the TIE, you’ll be a qualified open-water instructor.</p>
+                    <p>As a club, we will contribute half to your OWIC, and your first attempt at the PIE and TIE as long as you are committed to instructing for the club when you’re available.</p>
+                </div>
+            </details>
+
+        <details style="margin-bottom: 10px; border: 1px solid #121A38; border-radius: 4px;">
+            <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #ededed;">
+                Octopush
+            </summary>
+            <div style="padding: 15px; border-top: 1px solid #121A38;">
+                <p>We aren’t just a dive club, we’ve also got a very active Octopush/Underwater Hockey team. We attend both student and alumni nationals every year, and are aiming to 		submit a team to ladies nationals in 2027.
+
+
+		<p><strong>What is Octopush?</strong></p>
+		<p>Octopush is a fast-paced non-contact sport played at the bottom of a swimming pool. It is essentially ice hockey but underwater - a weighted puck sits on the bottom of 		the pool, and you use sticks to try score the puck into the goal. Each player has a snorkel, allowing them to come up to breathe as and when needed. There are 6 people on 		each team.
+
+
+		<p><strong>Our Training Sessions</strong></p>
+		<p>Our push team trains every Tuesday and Friday evening from 8:30 - 10. We usually spend the first 15 to 45 minutes doing skills related drills, warm ups and practicing puck skills. Often an experienced member of the team sets up small drills for the inexperienced members, and if there are any brand new players, an experienced player will spend the first half an hour teaching them the basics. 
+
+		<p>Once we’ve spent some time working on our skills, we go into a full pool game. Teams are decided before the session by our push captain, and we have 2 or 3 teams, with 2 teams playing at a time.
+
+		<p>We allow our members to borrow all required kit other than swimwear (mask, fins, snorkel, hat, glove, stick), and we can also support you with advice if you’d like to buy your own kit. 
+
+</p>
+            </div>
+        </details>
+
+
+
+
+
+
+        
+        </div>
+</section>
     </main>
 
     <footer>
+        <div class="footer-contact">
+            <h4>Contact  Us</h4>
+            <p>Email: <a href="mailto:livsubaqua@gmail.com">livsubaqua@gmail.com</a> | Instagram: <a href="https://instagram.com/livsubaqua">@livsubaqua</a></p>
+        </div>
+        <hr style="max-width: 600px; border: 0; border-top: 1px solid #ddd; margin: 20px auto;">
         <p>&copy; 2026 Liverpool Sub-Aqua Club. All rights reserved.</p>
     </footer>
-
-    <script>
-        function checkCode() {
-            const code = document.getElementById('clubCode').value;
-            if (code) {
-                // This tries to send the user to [code].html
-                // Example: if the code is 'Bubbles26', they go to 'Bubbles26.html'
-                window.location.href = code + ".html";
-            }
-        }
-    </script>
 </body>
 </html>

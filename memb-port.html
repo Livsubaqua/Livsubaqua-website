@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Members Portal | LUSAC</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Specific styling for the login box */
+        .login-box {
+            background-color: #121A38;
+            color: white;
+            max-width: 500px;
+            margin: 100px auto;
+            padding: 40px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .login-input {
+            padding: 12px;
+            border-radius: 4px;
+            border: none;
+            width: 100%;
+            margin-bottom: 20px;
+            box-sizing: border-box; 
+        }
+
+        .login-button {
+            background-color: white;
+            color: #121A38;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            transition: opacity 0.2s;
+        }
+
+        .login-button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="port-nav">
+                <img src="images/logo.png" alt="LUSAC Seal Logo" class="logo">
+                <span class="club-name">LUSAC</span>
+            </div>
+            <ul class="starboard-nav">
+                <li><a href="index.html">Home</a></li>
+			<li class="dropdown">
+     			<a href="about.html" class="dropbtn">About Us</a>
+        		<div class="dropdown-content">
+           		<a href="committee.html">Committee</a>
+       		   </div>
+   		 </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="training.html">Training</a></li>
+                <li><a href="memb-port.html">Members Portal</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="login-box">
+            <h2>Members Portal</h2>
+            <p>Enter your access code to view Constitution and internal resources.</p>
+            
+            <input type="password" id="clubCode" class="login-input" placeholder="Enter Password">
+            <button onclick="checkCode()" class="login-button">Enter</button>
+            
+            <p id="errorMsg" style="color: #ff4d4d; display: none; margin-top: 15px; font-weight: bold;">
+                Invalid password. Please try again.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p>Email: <a href="mailto:livsubaqua@gmail.com">livsubaqua@gmail.com</a> | Instagram: <a href="https://instagram.com/livsubaqua">@livsubaqua</a></p>
+        </div>
+        <hr style="max-width: 600px; border: 0; border-top: 1px solid #ddd; margin: 20px auto;">
+        <p>&copy; 2026 Liverpool Sub-Aqua Club. All rights reserved.</p>
+    </footer>
+
+<script>
+    async function checkCode() {
+        const input = document.getElementById('password');
+        const code = input.value.trim();
+        const errorMsg = document.getElementById('errorMsg');
+
+        // Hide error message at the start of a new attempt
+        errorMsg.style.display = "none";
+
+        if (code) {
+            try {
+                // The script "scouts" the server to see if the file exists
+                const response = await fetch(code + ".html", { method: 'HEAD' });
+
+                if (response.ok) {
+                    // File exists, proceed to redirect
+                    window.location.href = code + ".html";
+                } else {
+                    // File does not exist (404), show the error message
+                    errorMsg.style.display = "block";
+                    input.value = ""; // Clear input for next attempt
+                }
+            } catch (error) {
+                // Handles network issues or blocked requests
+                errorMsg.style.display = "block";
+            }
+        }
+    }
+
+    // Listener for the "Enter" key
+    document.getElementById("password").addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            checkCode();
+        }
+    });
+</script>
